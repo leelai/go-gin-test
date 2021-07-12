@@ -4,10 +4,12 @@ GET http://0.0.0.0:8080/ping HTTP/1.1
 
 GET http://0.0.0.0:8080/user/abc HTTP/1.1
 
-
 ###
 
 POST http://0.0.0.0:8080/user/john/send HTTP/1.1
 
 ###
 GET http://0.0.0.0:8080/user/groups HTTP/1.1
+
+###
+GET http://0.0.0.0:8080/welcome?firstname=Jane&lastname=Doe HTTP/1.1
