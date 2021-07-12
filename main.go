@@ -50,5 +50,28 @@ func main() {
 		c.String(http.StatusOK, "Hello %s %s", firstname, lastname)
 	})
 
+	//Multipart/Urlencoded Form
+	router.POST("/form_post", func(c *gin.Context) {
+		message := c.PostForm("message")
+		nick := c.DefaultPostForm("nick", "anonymous")
+
+		c.JSON(200, gin.H{
+			"status":  "posted",
+			"message": message,
+			"nick":    nick,
+		})
+	})
+
+	//Another example: query + post form
+	router.POST("/post", func(c *gin.Context) {
+		name := c.PostForm("name")
+		message := c.PostForm("message")
+
+		c.JSON(200, gin.H{
+			"message": message,
+			"name":    name,
+		})
+	})
+
 	router.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 }
