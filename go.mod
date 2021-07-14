@@ -1,4 +1,4 @@
-module modtest
+module hello.gin
 
 go 1.16
 

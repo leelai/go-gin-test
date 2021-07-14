@@ -1,8 +1,9 @@
 package main
 
 import (
-	"modtest/handlers"
 	"net/http"
+
+	"hello.gin/handlers"
 
 	"github.com/gin-gonic/gin"
 )
