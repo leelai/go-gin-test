@@ -1,6 +1,12 @@
 ## Hello gin
 
 Try some [API examples](https://github.com/gin-gonic/gin#api-examples)
+
+## Run
+
+```
+$ go run .
+```
 ## Reference
 
 - [gin](https://github.com/gin-gonic/gin)
