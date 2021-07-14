@@ -1,6 +1,7 @@
 package main
 
 import (
+	"modtest/handlers"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -8,11 +9,7 @@ import (
 
 func main() {
 	router := gin.Default()
-	router.GET("/ping", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"c": "pong",
-		})
-	})
+	router.GET("/ping", handlers.Ping)
 
 	// This handler will match /user/john but will not match /user/ or /user
 	router.GET("/user/:name", func(c *gin.Context) {
