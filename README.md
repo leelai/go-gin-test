@@ -1,6 +1,6 @@
 ## Hello gin and swagger
 
-Try some [API examples](https://github.com/gin-gonic/gin#api-examples) and add swagger.
+Try some [API examples](https://github.com/gin-gonic/gin#api-examples) and swagger.
 
 ### Download Swag for Go by using:
 
