@@ -1,7 +1,7 @@
 ## Hello gin and swagger
 
 Try some [gin api examples](https://github.com/gin-gonic/gin#api-examples) and [swagger](https://github.com/swaggo/gin-swagger).
-
+Offical doc [[here]](https://github.com/swaggo/swag/blob/master/README.md)
 ### Download Swag for Go by using:
 
 ```
@@ -21,7 +21,10 @@ $ export PATH=$PATH:[the value of GOPATH]
 ```
 $ swag init
 ```
-
+if it shows 'cannot find type definition', try
+```
+$ swag init --parseDependency --parseInternal
+```
 ### Run server
 
 ```
