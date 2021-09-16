@@ -5,12 +5,15 @@ Try some [gin api examples](https://github.com/gin-gonic/gin#api-examples) and [
 ### Download Swag for Go by using:
 
 ```
-$ go get -u github.com/swaggo/swag/cmd/swag
+$ go install github.com/swaggo/swag/cmd/swag@latest
 ```
 ### Add go's bin path to enviroment
 
 ```
 $ export PATH=$PATH:$(dirname $(go list -f '{{.Target}}' .))
+or
+$ go env GOPATH
+$ export PATH=$PATH:[the value of GOPATH]
 ```
 
 ### Generate document
